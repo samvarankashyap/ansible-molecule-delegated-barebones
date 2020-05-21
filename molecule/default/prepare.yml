@@ -1,0 +1,6 @@
+- name: "Prepare playbook"
+  hosts: localhost
+  tasks:
+    - name: testplaybook
+      debug:
+        msg: "This is prepare playbook"

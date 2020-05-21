@@ -1,0 +1,5 @@
+- name: test playbook
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: "dsadasdasdasndasndadjlnajkndaskjndkasjndkjsandkjsnjskdnsdjkcnasdkjacnskjncskajcanskjnsakdjncskajcnaskjcnsakjcn jdsbjsdcsd jcdjhb"  

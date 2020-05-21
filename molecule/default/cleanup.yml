@@ -1,0 +1,9 @@
+- name: "cleanup playbook"
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: wait for host
+      wait_for_connection:
+        timeout: 1
+      register: waiting
+      ignore_errors: true

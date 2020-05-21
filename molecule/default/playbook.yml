@@ -1,0 +1,20 @@
+- name: Test Dummy Provision
+  hosts: all
+#  roles:
+#    - role: dummy
+  pre_tasks:
+    - name: "Pre tasks"
+      debug:
+        msg: "There are pre tasks"
+  post_tasks:
+    - name: "Pre tasks"
+      debug:
+        msg: "There are pre tasks"
+
+
+- name: Another play
+  hosts: localhost
+  tasks:
+    - name: "Tasks"
+      debug:
+        msg: "There are tasks in another play"

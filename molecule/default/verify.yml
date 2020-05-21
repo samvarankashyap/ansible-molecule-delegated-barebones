@@ -1,0 +1,12 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: localhost
+  tasks:
+  - name: "This is verifier"
+    debug:
+      msg: "This is a debug task inside verifier"
+  - name: Example assertion
+    assert:
+      that: true
